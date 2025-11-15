@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 10 - Profile Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .profile-card {
+            width: 350px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; 
+            object-fit: cover;
+            border: 4px solid #f0f4f8;
+            margin-bottom: 15px;
+        }
+        .profile-card h2 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: #333333;
+        }
+        .profile-card .description {
+            font-size: 0.95em;
+            color: #666666; 
+            margin-bottom: 20px;
+        }
+        .details-list {
+            list-style-type: none; 
+            padding: 0; 
+            margin-bottom: 25px;
+            text-align: left; 
+        }
+        
+        .details-list li {
+            padding: 8px 0; 
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .details-list li:last-child {
+             border-bottom: none; 
+        }
+        .profile-button {
+            display: inline-block; 
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 30px;
+            border: 2px solid #007bff;
+            border-radius: 25px;
+            background-color: #007bff;
+            color: #ffffff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .profile-button:hover {
+            background-color: #ffffff;
+            color: #007bff;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+
+        <img src="c:\Users\adity\Downloads\photo_2025-09-17_18-41-57.jpeg" alt="Profile Picture" class="profile-pic">
+
+        <h2>Aditya Pareek</h2>
+
+        <p class="description">
+            Full-Stack Developer & UI/UX enthusiast. Passionate about building clean, accessible, and user-friendly web applications.
+        </p>
+
+        <ul class="details-list">
+            <li><strong>Profession:</strong> Web Developer</li>
+            <li><strong>Location:</strong>Delhi, India</li>
+        </ul>
+
+        <a href="#" class="profile-button">View Profile</a>
+
+    </div>
+
+</body>
+</html>

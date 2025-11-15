@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7 - Class Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .timetable-container {
+            width: 95%;
+            max-width: 1400px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse; 
+            table-layout: fixed; 
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 12px 8px;
+            text-align: center;
+            vertical-align: middle; 
+            height: 60px;
+            font-size: 14px;
+        }
+        thead th {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+        tbody th {
+            background-color: #f9f9f9;
+            font-weight: bold;
+            width: 8%; 
+        }
+        .zero-hour {
+            background-color: #ffff99;
+            font-weight: bold;
+        }
+        .lab {
+            display: block;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="timetable-container">
+        <h1>Class Timetable (SEC-1/A01)</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Day/Time</th>
+                    <th scope="col">8-9</th>
+                    <th scope="col">9-10</th>
+                    <th scope="col">10-11</th>
+                    <th scope="col">11-12</th>
+                    <th scope="col">12-1</th>
+                    <th scope="col">1-2</th>
+                    <th scope="col">2-3</th>
+                    <th scope="col">3-4</th>
+                    <th scope="col">4-5</th>
+                    <th scope="col">5-6</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">MON</th>
+                    <td></td>
+                    <td>ME 105 (L)<span class="lab">PB-GF4</span></td>
+                    <td></td>
+                    <td>AM 101 (L)<span class="lab">PB-GF4</span></td>
+                    <td>AM 101 G1(T)<span class="lab">PB-GF4</span></td>
+                    <td>AM 101 G2(T)<span class="lab">PB-GF4</span></td>
+                    
+                    <td colspan="2">SEC-1 (CS-103)<span class="lab">SPS6</span></td>
+                    <td colspan="2">SEC-1 Lab (CS-103)<span class="lab">[Prog. Lab]</span></td>
+                </tr>
+
+                <tr>
+                    <th scope="row">TUE</th>
+                    <td></td>
+                    <td colspan="2">AEC/VAC</td>
+                    <td>CO 101(L)<span class="lab">PB-GF4</span></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2">EC 101(L)<span class="lab">PB-GF4</span></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <th scope="row">WED</th>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2">ME 105(P) LAB</td>
+                    <td>ME 105(L)<span class="lab">PB-GF4</span></td>
+                    <td></td>
+                    <td colspan="2">CO 101(P) LAB</td>
+                    
+                    <td colspan="2" class="zero-hour">Zero Hour (No Classes)</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">THU</th>
+                    <td></td>
+                    <td colspan="2">AEC/VAC</td>
+                    <td>EC 101(L)<span class="lab">PB-GF4</span></td>
+                    <td colspan="2">EC 101(P) LAB</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <th scope="row">FRI</th>
+                    <td></td>
+                    <td>AM 101(L)<span class="lab">PB-GF4</span></td>
+                    <td>CO 101(L)<span class="lab">PB-GF4</span></td>
+                    <td></td>
+                    
+                    <td colspan="6"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+
+</body>
+</html>
